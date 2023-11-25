@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bamssaye <bamssaye@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: bamssaye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 10:11:56 by bamssaye          #+#    #+#             */
-/*   Updated: 2023/11/23 06:38:54 by bamssaye         ###   ########.fr       */
+/*   Updated: 2023/11/25 03:00:38 by bamssaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 	size_t	d;
 	size_t	s;
 
-	if (!dest && !n)
-		return (0);
 	s = ft_strlen(src);
+	if (!dest && !n)
+		return (s);
 	d = ft_strlen(dest);
 	if (d >= n)
 		return (n + s);
@@ -32,3 +32,10 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 	}
 	return (s + d);
 }
+// #include <stdio.h>
+// #include <bsd/string.h>
+// int main()
+// {
+// 	char d[42] = "hello";
+// 	printf("%lu",ft_strlcat(NULL,NULL,0));
+// }

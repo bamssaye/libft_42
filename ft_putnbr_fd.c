@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bamssaye <bamssaye@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: bamssaye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 12:57:56 by bamssaye          #+#    #+#             */
-/*   Updated: 2023/11/22 02:46:02 by bamssaye         ###   ########.fr       */
+/*   Updated: 2023/11/25 02:06:19 by bamssaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,4 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(((nb % 10) + 48), fd);
 	}
 }
+

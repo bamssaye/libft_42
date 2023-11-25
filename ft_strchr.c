@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bamssaye <bamssaye@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bamssaye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 05:11:27 by bamssaye          #+#    #+#             */
-/*   Updated: 2023/11/20 11:05:33 by bamssaye         ###   ########.fr       */
+/*   Updated: 2023/11/25 02:25:51 by bamssaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -25,3 +24,11 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	char p[50] = "hello";
+
+// 	printf("%p\n",strchr(p+1,'l'));
+// 	printf("%p",strchr(p+1,'l'));
+// }

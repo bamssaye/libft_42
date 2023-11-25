@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bamssaye <bamssaye@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: bamssaye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 05:14:06 by bamssaye          #+#    #+#             */
-/*   Updated: 2023/11/23 01:30:04 by bamssaye         ###   ########.fr       */
+/*   Updated: 2023/11/25 02:23:14 by bamssaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,3 +101,13 @@ char	**ft_split(char const *s, char c)
 	ft_splitall(str, s, c, countword);
 	return (str);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	char p[] = "    hello dear ou need     ";
+// 	char **c = ft_split(p, ' ');
+// 	int i = 0;
+// 	while(c[i])
+// 		printf("%s \n", c[i++]);
+// 	ft_freespace(c,i);
+// }

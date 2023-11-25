@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bamssaye <bamssaye@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: bamssaye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 14:34:15 by bamssaye          #+#    #+#             */
-/*   Updated: 2023/11/22 21:59:39 by bamssaye         ###   ########.fr       */
+/*   Updated: 2023/11/25 03:29:06 by bamssaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	if (!lst || !del)
 		return ;
 	node = *lst;
-	while (node != NULL)
+	while (node)
 	{
 		tmp = node;
 		node = node->next;

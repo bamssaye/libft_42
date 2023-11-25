@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bamssaye <bamssaye@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: bamssaye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 14:34:10 by bamssaye          #+#    #+#             */
-/*   Updated: 2023/11/21 16:26:57 by bamssaye         ###   ########.fr       */
+/*   Updated: 2023/11/25 03:26:15 by bamssaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*addlstnode;
 
+	if(!*lst && !lst && !new)
+		return ;
 	if (lst == NULL)
 		return ;
 	if (*lst == NULL)
