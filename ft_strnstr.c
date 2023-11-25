@@ -10,25 +10,35 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t	i;
+	size_t	lenli;
 
-	if (!big && !len)
-		return (NULL);
-	if (!*little)
-		return ((char *)big);
-	while (*big && len > 0)
+	lenli = ft_strlen(little);
+    if (!lenli)
 	{
-		i = 0;
-		while (big[i] == little[i] && little[i] && i < len)
-			i++;
-		if (!little[i])
-			return ((char *)big);
-		big++;
-		len--;
+        return ((char *)big);
 	}
-	return (NULL);
+    while (*big && len >= lenli)
+	{
+        if ((*big == *little) && !ft_strncmp(big, little, lenli))
+		{
+            return (char *)big;
+        }
+        big++;
+        len--;
+    }
+    return (NULL);
 }
+// #include<string.h>
+// #include<stdio.h>
+// #include <bsd/string.h>
+// int main()
+// {
+// 	char p[50] = "hello wrold";
+// 	char *m = "";
+// 	//printf("newMe:%s||| \n",ft_strnstr(NULL,"", 1));
+// 	printf("new:%s||| \n",strnstr(NULL,NULL, 0));
+
+// }
+
