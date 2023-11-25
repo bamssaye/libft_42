@@ -6,29 +6,31 @@
 /*   By: bamssaye <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 04:37:29 by bamssaye          #+#    #+#             */
-/*   Updated: 2023/11/25 00:19:49 by bamssaye         ###   ########.fr       */
+/*   Updated: 2023/11/25 11:38:03 by bamssaye         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	lenli;
 
 	lenli = ft_strlen(little);
-    if (!lenli)
+	if (!lenli)
 	{
-        return ((char *)big);
+		return ((char *)big);
 	}
-    while (*big && len >= lenli)
+	while (*big && len >= lenli)
 	{
-        if ((*big == *little) && !ft_strncmp(big, little, lenli))
+		if ((*big == *little) && !ft_strncmp(big, little, lenli))
 		{
-            return (char *)big;
-        }
-        big++;
-        len--;
-    }
-    return (NULL);
+			return ((char *)big);
+		}
+		big++;
+		len--;
+	}
+	return (NULL);
 }
 // #include<string.h>
 // #include<stdio.h>
@@ -41,4 +43,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 // 	printf("new:%s||| \n",strnstr(NULL,NULL, 0));
 
 // }
-
