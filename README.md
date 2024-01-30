@@ -80,7 +80,5 @@ Make sure to add the `t_list` structure declaration to your `libft.h` file and i
 **Note:** The bonus part will only be assessed if the mandatory part is perfect. If any mandatory requirements are not met, the bonus part will not be evaluated.
 
 ## Author
-Your Name
+ID : Bamssaye
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
